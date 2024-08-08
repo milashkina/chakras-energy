@@ -10,7 +10,7 @@ const initialState: SvadhisthanaSliceState = {
 }
 
 export const SvadhisthanaSlice = createAppSlice({
-    name: "svadhisthanaSlice",
+    name: "test",
     initialState,
     reducers: (create) => ({
         add: create.reducer((state, action) => {

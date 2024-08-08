@@ -8,3 +8,5 @@ export type AppDispatch = ThunkDispatch<RootState, unknown, TAppActions>;
 export type AppThunkAction<ReturnType = void> = ThunkAction<ReturnType, RootState, unknown, TAppActions>;
 
 export type TAppActions = TUserQuestionnaire
+
+export type TQuestionsList = string[]

@@ -2,11 +2,9 @@ import type { Action, ThunkAction } from "@reduxjs/toolkit";
 import { combineSlices, configureStore } from "@reduxjs/toolkit";
 import {EnergyTestSlice} from "@/lib/features/energy-test/energy-test-slice";
 import {SvadhisthanaSlice} from "@/lib/features/muladhara-slice/svadhisthana-slice";
+import {UserSlice} from "@/lib/features/user/user-slice";
+import {rootReducer} from "@/lib/rootReducers";
 
-// `combineSlices` automatically combines the reducers using
-// their `reducerPath`s, therefore we no longer need to call `combineReducers`.
-const rootReducer = combineSlices(EnergyTestSlice,
-    SvadhisthanaSlice,);
 // Infer the `RootState` type from the root reducer
 export type RootState = ReturnType<typeof rootReducer>;
 

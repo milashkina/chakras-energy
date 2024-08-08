@@ -4,38 +4,38 @@ import {PayloadAction} from "@reduxjs/toolkit";
 
 
 export interface EnergyTestSliceState {
-    value: number;
-    muladhara: number;
-    svadhisthana: number;
-    manipura: number;
-    anahata: number;
-    vishuddha: number;
-    ajna: number;
+    score: number;
+    muladhara: number[];
+    svadhisthana: number[];
+    manipura: number[];
+    anahata: number[];
+    vishuddha: number[];
+    ajna: number[];
 }
 
 const initialState: EnergyTestSliceState = {
-    value: 0,
-    muladhara: 0,
-    svadhisthana: 0,
-    manipura: 0,
-    anahata: 0,
-    vishuddha: 0,
-    ajna: 0,
+    score: 0,
+    muladhara: [],
+    svadhisthana: [],
+    manipura: [],
+    anahata: [],
+    vishuddha: [],
+    ajna: [],
 }
 
 export const EnergyTestSlice = createAppSlice({
-    name: "muladharaCounter",
+    name: "test-slice",
     initialState,
     reducers: (create) => ({
         increment: create.reducer((state) => {
-            state.value +=1;
+            state.score +=1;
         }),
         decrement: create.reducer((state) => {
-            state.value -= 1;
+            state.score -= 1;
         }),
         incrementByAmount: create.reducer(
             (state, action: PayloadAction<number>) => {
-                state.value += action.payload;
+                state.score += action.payload;
             },
         ),
     }),
@@ -49,13 +49,3 @@ export const {increment, decrement, incrementByAmount} =
 
 export const {selectMuladhara} =
     EnergyTestSlice.selectors
-
-export const incrementIfOdd =
-    (amount: number): AppThunkAction =>
-        (dispatch, getState) => {
-            const currentValue = selectMuladhara(getState());
-
-            if (currentValue % 2 === 1 || currentValue % 2 === -1) {
-                dispatch(incrementByAmount(amount));
-            }
-        }

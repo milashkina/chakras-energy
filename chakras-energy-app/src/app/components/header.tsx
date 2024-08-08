@@ -16,7 +16,7 @@ export default function Header () {
             <div>
                 <Link href={'/sources'} className={'hover:text-indigo-500'}>sources</Link>
             </div>
-            <Link href={'/test'}>
+            <Link href={`/test/1234567`}>
                 <button className={`${globalStyle.btn}`}>test</button>
             </Link>
             </header>
