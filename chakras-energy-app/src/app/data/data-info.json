@@ -1,0 +1,93 @@
+[
+  {
+    "_id": 7,
+    "sound": "AYOM",
+    "name": "Crown or Sahasrara" ,
+    "meaning": "self-knowledge",
+    "color": "violet",
+    "sense": "knowing",
+    "location": "crown of head",
+    "gemstones": ["Amethyst","Clear Quartz"],
+    "essential_oil": ["Jasmine","Lavender","Myrrh","Neroli"],
+    "pranayama": ["Nadi Shodhana","Kapalibhati - skull shining breath "],
+    "mandala": "chakra1.png"
+  },
+  {
+    "_id": 6,
+    "sound": "OM",
+    "name": "Third eye or Ajna" ,
+    "meaning": "self-realization",
+    "color": "indigo",
+    "sense": "intuition",
+    "location": "center of forehead",
+    "gemstones": ["some deep blue stone","Lapis Lazuli","Sapphire","Diamonds"],
+    "essential_oil": ["Patchouli","Basil","Ladan"],
+    "pranayama": ["Anuloma Viloma Pranayama"],
+    "mandala": "chakra_2.png"
+  },
+  {
+    "_id": 5,
+    "sound": "HAM",
+    "name": "Throat or Vishuddha" ,
+    "meaning": "self-expression",
+    "color": "blue",
+    "sense": "hearing",
+    "location": "center of throat",
+    "gemstones": ["some blue stone","Aqua Aura Quartz","Chrysocolla","Larimar","Turquoise"],
+    "essential_oil": ["lavender","chamomile","Rosemary","Thyme"],
+    "pranayama": ["ujjayi pranayama","Rattle Snake Breath"],
+    "mandala": "chakra_3.png"
+  },
+  {
+    "_id": 4,
+    "sound": "YAM",
+    "name": "Heart or Anahata" ,
+    "meaning": "self-acceptance",
+    "color": "green, rose",
+    "sense": "touch",
+    "location": "center of chest",
+    "gemstones": ["some green or rose stone","Pink  Kunzite","Peridot","Green tourmaline","Rose quartz","Rhodochrosite"],
+    "essential_oil": ["Rose","Melisa","Neroli",""],
+    "pranayama": ["Inhale through the nose, exhale through the mouth"],
+    "mandala": "chakra_4.png"
+  },
+  {
+    "_id": 3,
+    "sound": "RAM",
+    "name": "Solar plexus or Manipura" ,
+    "meaning": "self-definition",
+    "color": "yellow",
+    "sense": "sight",
+    "location": "just above navel",
+    "gemstones": ["some yellow stone","Yellow Jasper","Citrine","Sunstone"],
+    "essential_oil": ["Geranium","Cedarwood","Ginger","Black Pepper","Rosemary"],
+    "pranayama": ["Kaphalabhati or skull-shining breath"],
+    "mandala": "chakra_5.png"
+  },
+  {
+    "_id": 2,
+    "sound": "VAM",
+    "name": "Sacral or Svadhisthana" ,
+    "meaning": "self-gratification",
+    "color": "orange",
+    "sense": "touch and taste",
+    "location": "just below navel",
+    "gemstones": ["some orange stone","Carnelian","Orange Calcite","Moonstone","Imperial Topaz"],
+    "essential_oil": ["Ylang ylang","Sandal","Patchouli", "Rose", "Champaca", "Sweet orange"],
+    "pranayama": ["The Ujjayi breath","viloma pranayama"],
+    "mandala": "chakra_6.png"
+  },
+  {
+    "_id": 1,
+    "sound": "LAM",
+    "name": "Root or Muladhara" ,
+    "meaning": "self-preservation",
+    "color": "red",
+    "sense": "smell",
+    "location": "base of spine",
+    "gemstones": ["some red  stone","Red Jasper", "Black Tourmaline", "Hematite", "Smoky Quartz", "Obsidian", "Garnet", "Tiger's Eye", "Bloodstone", "Onyx", "Carnelian", "Sapphire"],
+    "essential_oil": ["Cedarwood","Frankincense","Vetiver", "Spruce", "Sandalwood"],
+    "pranayama": ["Equal Breath", "Ocean Breath"],
+    "mandala": "chakra_7.png"
+  }
+]

@@ -1,0 +1,22 @@
+.btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 36px;
+    border-radius: 30px;
+    background-color: rgb(28, 28, 33);
+}
+.btn:hover {
+    box-shadow: 0 0 16px 8px rgb(236, 233, 233), 0 0 8px 8px rgba(248, 252, 242, 0.84);
+}
+.header,
+.footer {
+    width: 100%;
+    background: rgb(28, 28, 33);
+}
+.infoSection {
+    box-shadow: 0 0 16px 8px rgb(236, 233, 233), 0 0 8px 8px rgba(248, 252, 242, 0.84);
+}
+.frame {
+    min-width: 90px;
+    min-height: 90px;
+}
