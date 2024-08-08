@@ -1,5 +1,4 @@
 import {createAppSlice} from "@/lib/create-app-slice";
-import {AppThunkAction} from "@/lib/types";
 import {PayloadAction} from "@reduxjs/toolkit";
 
 

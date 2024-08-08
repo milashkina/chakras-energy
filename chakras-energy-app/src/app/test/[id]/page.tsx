@@ -1,10 +1,8 @@
 "use client"
 import Link from "next/link";
-import globalStyle from "@/app/globalStyle.module.css";
-import AnswerSection from "@/app/test/[id]/[slug]/answer-section";
 import {useMemo, useState} from "react";
 import dataQuestions from "@/app/data/data-questions.json";
-import {nanoid, random} from "nanoid";
+import {nanoid} from "nanoid";
 
 type Props = {
     params: {

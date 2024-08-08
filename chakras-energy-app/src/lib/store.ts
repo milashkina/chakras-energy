@@ -1,8 +1,5 @@
 import type { Action, ThunkAction } from "@reduxjs/toolkit";
-import { combineSlices, configureStore } from "@reduxjs/toolkit";
-import {EnergyTestSlice} from "@/lib/features/energy-test/energy-test-slice";
-import {SvadhisthanaSlice} from "@/lib/features/muladhara-slice/svadhisthana-slice";
-import {UserSlice} from "@/lib/features/user/user-slice";
+import { configureStore } from "@reduxjs/toolkit";
 import {rootReducer} from "@/lib/rootReducers";
 
 // Infer the `RootState` type from the root reducer

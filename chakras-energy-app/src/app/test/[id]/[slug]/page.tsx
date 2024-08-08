@@ -1,4 +1,3 @@
-import AnswerSection from "@/app/test/[id]/[slug]/answer-section";
 import globalStyle from "@/app/globalStyle.module.css";
 
 
