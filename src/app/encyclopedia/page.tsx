@@ -8,8 +8,8 @@ import Image from "next/image"
 interface IChakraInfo {
     info: TChakraInfo[],
 }
-const Page: FC<IChakraInfo> = ({info}): JSX.Element => {
-    info = data
+const Page = (): JSX.Element => {
+    const info = data
 
     return (
         <section>

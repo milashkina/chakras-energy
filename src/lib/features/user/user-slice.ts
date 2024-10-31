@@ -14,10 +14,10 @@ export const UserSlice = createAppSlice({
     initialState,
     reducers: (create) => ({
         new: create.reducer((state) => {
-            state.user.id = 1234567;
+            state.id = 1234567;
         }),
         delete: create.reducer( (state) => {
-            state.user.id = 0;
+            state.id = 0;
         })
     }),
 })
