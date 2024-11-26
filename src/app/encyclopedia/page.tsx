@@ -1,5 +1,5 @@
 import globalStyle from "@/app/globalStyle.module.css";
-import data from '@/app/data/data-info.json'
+import data from '@/app/data/data-info-rus.json'
 import {TChakraInfo} from "@/app/data/type";
 import React, {FC} from "react";
 import Reiki from "../../../public/the-chakras-reiki.png"
@@ -20,7 +20,7 @@ const Page = (): JSX.Element => {
             </ul>
             <Image src={Reiki && Reiki.src} height={105} width={200} alt={"info-graphic"} />
         </div>
-        <div className={`flex flex-col justify-between items-center p-8 gap-10`}>
+        <div className={`flex flex-col flex-start items-center p-8 gap-10`}>
             {info && info.map((elem) =>
                 <div className={`flex flex-col gap-2 justify-evenly items-center`} data-info={elem} key={elem._id}>
                     <div>{elem.sound}</div>
@@ -29,14 +29,14 @@ const Page = (): JSX.Element => {
                             <Image src={'/'+elem.mandala} alt={elem.name} className={`${globalStyle.frame}`} width={95} height={95}/>
                         </div>
                         <div>
-                            <div className={`font-light`}><span className={`font-bold`}>Name:</span> {elem.name}</div>
-                            <div className={`font-light`}><span className={`font-bold`}>Meaning:</span> {elem.meaning}</div>
-                            <div className={`font-light`}><span className={`font-bold`}>Color:</span> {elem.color}</div>
-                            <div className={`font-light`}><span className={`font-bold`}>Sense: </span>{elem.sense}</div>
-                            <div className={`font-light`}><span className={`font-bold`}>Location: </span>{elem.location}</div>
-                            <div className={`font-light`}><span className={`font-bold`}>Gemstones: </span>{elem.gemstones.map((el, key) => <span key={key}>{el}, </span>)}</div>
-                            <div className={`font-light`}><span className={`font-bold`}>Pranayama: </span>{elem.pranayama.map((el, key) => <span key={key}>{el}, </span>)}</div>
-                            <div className={`font-light`}><span className={`font-bold`}>Essential oils: </span>{elem.essential_oil.map((el, key) => <span key={key}>{el}, </span>)}</div>
+                            <div className={`font-light`}><span className={`font-bold`}>Название:</span> {elem.name}</div>
+                            <div className={`font-light`}><span className={`font-bold`}>Перевод с санскрита:</span> {elem.sanskrit}</div>
+                            <div className={`font-light`}><span className={`font-bold`}>Цвет:</span> {elem.color}</div>
+                            <div className={`font-light`}><span className={`font-bold`}>Влияние на: </span>{elem.sense}</div>
+                            <div className={`font-light`}><span className={`font-bold`}>Где расположенна: </span>{elem.location}</div>
+                            <div className={`font-light`}><span className={`font-bold`}>Камни для проработки: </span>{elem.gemstones.map((el, key) => <span key={key}>{el}, </span>)}</div>
+                            <div className={`font-light`}><span className={`font-bold`}>Пранояма: </span>{elem.pranayama.map((el, key) => <span key={key}>{el}, </span>)}</div>
+                            <div className={`font-light`}><span className={`font-bold`}>Эфирные масла: </span>{elem.essential_oil.map((el, key) => <span key={key}>{el}, </span>)}</div>
                         </div>
                     </div>
                 </div>
