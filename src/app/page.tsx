@@ -2,11 +2,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      On this site you can explore the universe inside yourself.
-      Look at <Link href={'/encyclopedia'} className={'underline hover:decoration-indigo-500 '}>Encyclopedia</Link> for more information about energies centers.
-        After you can take the <Link href={'/test'} className={'underline hover:decoration-indigo-500'}>test</Link> about your condition. You can evaluate the lead energy center in your body. And, witch is more important, find out empty center.
-        If some practical is new for you try to find out helpful Link inside the <Link href={'/sources'} className={'underline hover:decoration-indigo-500'}>sources</Link>
+    <main className=" p-24">
+        <ul>
+            <li className={'p-2'}>На этом сайте вы можете исследовать вселенную внутри себя.</li>
+            <li className={'p-2'}>Загляни в <Link href={'/encyclopedia'} className={'underline hover:decoration-indigo-500 '}>энциклопедию</Link> для получения знаний по энергетическим центрам.</li>
+            <li className={'p-2'}>После, вы можете пройти <Link href={'/test'} className={'underline hover:decoration-indigo-500'}>тест</Link> чтобы визуализировать свое текущее состояние. Вы можете выяснить свой ведущий центр в вашем теле. И, что не менее важно, найти опустошенные центры. Те, что нуждаются в вашем внимании.</li>
+            <li className={'p-2'}>В разделе <Link href={'/sources'} className={'underline hover:decoration-indigo-500'}>статьи</Link> вы найдете полезные техники для центров, чтобы вернуть им циркуляцию энергии.</li>
+        </ul>
     </main>
   );
 }
